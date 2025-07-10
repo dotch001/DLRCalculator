@@ -1,0 +1,51 @@
+# Ignore user-specific files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Rider
+.idea/
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+TestResults/
+
+# MSTest
+*.vsp
+*.vspx
+*.coverage
+*.coveragexml
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+
+# Web stuff
+node_modules/
+dist/
+
+# Others
+*.log
+*.tlog
+*.cache
+*.pdb
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.vssscc
+*.vspscc

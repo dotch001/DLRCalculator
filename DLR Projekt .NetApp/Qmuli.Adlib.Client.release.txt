@@ -1,0 +1,410 @@
+---------------
+VERSION 5.2.9
+---------------
+
+ADDED: NamedSizeCode to Publication Section Size data
+
+---------------
+VERSION 5.2.8
+---------------
+
+UPDATED: GetPublicationIdListFromLastUpdatedDate to format date correctly.
+
+---------------
+VERSION 5.2.7
+---------------
+
+ADDED: GetPublicationMostRecentUpdatedDateAsString API Call
+
+---------------
+VERSION 5.2.6
+---------------
+
+ADDED: GetPublicationBillingUnits API call
+
+---------------
+VERSION 5.2.5
+---------------
+
+ADDED: BillingUnit property to Section DTO
+
+---------------
+VERSION 5.2.4
+---------------
+
+ADDED: PadnCutOffTimeEnabled and PadnCutOffTime properties to Section DTO
+
+---------------
+VERSION 5.2.3
+---------------
+
+ADDED: UrnMandatory to Section DTO
+
+---------------
+VERSION 5.2.2
+---------------
+
+ADDED: DeliverWithoutTrackingNo and PadnRequired to DTO objects
+
+---------------
+VERSION 5.2.1
+---------------
+
+ADDED: PressCentreList parameter to GetPublicationSelectListByPressCentre to filter by multiple press centres 
+
+---------------
+VERSION 5.2.0
+---------------
+
+ADDED: PublicationContacts to Press Section Info
+
+---------------
+VERSION 5.1.7
+---------------
+
+ADDED: excludePressCentre option to GetPublicationSelectListByPressCentre & GetAdminPlusPublicationSelectListByPressCentre api calls.
+
+---------------
+VERSION 5.1.6
+---------------
+
+ADDED: UploadCheckProfile to PressProductionData DTO
+REMOVED: MinimumImageResolution & MinimumBitmapResolution from production data
+ADDED: MinimumImageResolutionValue, MinimumBitmapResolutionValue to Section Data as int values.
+
+---------------
+VERSION 5.1.5
+---------------
+
+ADDED: MinimumImageResolution, MinimumBitmapResolution, DeviceLinkProfile, ProcessingProfile PressProductionData DTO
+
+---------------
+VERSION 5.1.4
+---------------
+
+ADDED: PaidByPublisher and PrePressPhone to Press Section DTO
+
+---------------
+VERSION 5.1.3
+---------------
+
+ADDED: Unit Tests to test Auth Methods.
+FIXED: GetSessionKey and IsSessionKeyValid client methods.
+
+---------------
+VERSION 5.1.2
+---------------
+
+UPDATED: DigitalSize - added properties and fixed previously added properties.
+
+---------------
+VERSION 5.1.1
+---------------
+
+UPDATED: DigitalSize - added a number of properties
+
+---------------
+VERSION 5.1.0
+---------------
+
+ADDED: GetPublicationSectionMappings Method and related DTO object
+
+---------------
+VERSION 5.0.30
+---------------
+
+ADDED: DPS Size properties to PublicationSectionSize DTO
+UPDATED: Renamed RELEASE.txt to Qmuli.Adlib.Client.release.txt to prevent other library clashes
+
+---------------
+VERSION 5.0.29
+---------------
+
+ADDED: GetPressSection API call
+
+---------------
+VERSION 5.0.28
+---------------
+
+ADDED: GetPaperMuleMappings API call
+
+---------------
+VERSION 5.0.27
+---------------
+
+ADDED: ControlsComments to the DigitalSize DTO
+
+---------------
+VERSION 5.0.26
+---------------
+
+ADDED: CustomParameters to the PublicationPressSection.
+
+---------------
+VERSION 5.0.25
+---------------
+
+ADDED: ExtraDetails to the PublicationSectionSize.
+
+---------------
+VERSION 5.0.24
+---------------
+
+ADDED: PressCentreContactName, PressCentreEmail, PressCentrePhone and PublisherCode to the PublicationData class.
+
+---------------
+VERSION 5.0.23
+---------------
+
+ADDED: GetAdminPlusPublicationPressSections - gets Press Sections belonging to a publication for Admin+.
+ADDED: GetAdminPlusPublicationPressSectionSelectList - gets a list of Press Section's Id and Name pairs belonging to a publication for Admin+.
+
+---------------
+VERSION 5.0.22
+---------------
+
+ADDED: JobType field to the PublicationContactDto (returned by the GetSectionContacts function).
+ADDED: VideoBitRate field to the DigitalSize.
+FIXED: Filtering published sections in GetPublicationPressSections.
+
+---------------
+VERSION 5.0.21
+---------------
+
+ADDED: GetWebsitePressCentreSearch - Gets the Press Centre List from the Adlib Public Data Api that are published and contain the query. 
+ADDED: GetWebsitePublicationSearch - Gets a Publication List from the Adlib Public Data Api that are published and contain the query.
+ADDED: GetMediaOwnersPublicationList - Gets a list of publications belonging to the media owner. 
+ADDED: GetMediaOwner - Gets the Media Owner's Details.
+ADDED: GetPressCentresPublicationList - Gets a list of publications belonging to the media owner.
+ADDED: GetSectionContacts - Gets the contacts of a press or digital section.
+
+---------------
+VERSION 5.0.20
+---------------
+
+REMOVED: BleedTypeName from PublicationPressSection and PublicationDigitalSection
+
+---------------
+VERSION 5.0.19
+---------------
+
+ADDED: MediumId, MediumName, TypeId, TypeName, BleedTypeName to PublicationPressSection
+ADDED: MediumId, MediumName, BleedTypeName to PublicationDigitalSection
+
+---------------
+VERSION 5.0.18
+---------------
+
+UPDATED: PublicationDigitalSection type (returned by GetPublicationDigitalSections) - added PublisherNotes 
+
+UPDATED: DigitalSize (used by GetPublicationDigitalSections, GetPublicationDigitalSectionSizes and GetPublicationSectionDigitalSize) - added the following properties:
+* ExpandableExtraSizeInformation
+* Comments
+* Format
+* Resolution
+* ColourSpace
+* ColourSpaceComments
+* PoliteFileSize
+* OBAFileSize
+* UserInitiatedFileSize
+* StreamFileSize
+* WeightsComments
+* SafeAreasComments
+* UrlLinkComments 
+* FlashComments 
+* HtmlComments 
+* VideoFormat 
+* AnimationFrameRate 
+* VideoAspectRatio 
+* VideoAnimationLength 
+* VideoLength 
+* VideoComments 
+* AudioInitiation 
+* AudioFormat 
+* AudioComments 
+* ClickTageComments 
+* ThirdPartyServerComments 
+* DeliveryMethod 
+* CopyDeadline 
+* AditionalSectionInfo 
+* CustomSectionInfo 
+* DeliveryMethods (a list of PressSectionDeliveryMethodsData)
+
+---------------
+VERSION 5.0.17
+---------------
+
+ADDED: A call to GetQmuliStandardWorkflows that returns a list of section IDs with their publication names
+
+---------------
+VERSION 5.0.16
+---------------
+
+FIXED: error when no requestSettings are provided to GetSessionKey, IsSessionKeyValid and GetPublicationMostRecentUpdatedDate
+
+---------------
+VERSION 5.0.15
+---------------
+
+FIXED: issues when the 'query' parameter's text contained special characters (e.g. &) in GetPublicationSelectList, GetPublicationSelectListByPressCentre and GetAdminPlusPublicationSelectListByPressCentre
+
+---------------
+VERSION 5.0.14
+---------------
+
+UPDATED: GetAdminPlusPublicationSelectListByPressCentre does NOT append the country name to the end of the publication name anymore
+
+---------------
+VERSION 5.0.13
+---------------
+
+UPDATED: All the API call methods received an optional RequestSettings parameter where settings for a single request can be passed without modifying global settings.
+
+---------------
+VERSION 5.0.12
+---------------
+
+ADDED: GetAdminPlusPublicationSelectListByPressCentre
+ADDED: Setters in the Settings class that allow to set the api url, username, session key and api key in code to overwrite default values from the config file.
+
+---------------
+VERSION 5.0.11
+---------------
+
+ADDED: GetAdfastPublicationPressSectionSelectList
+
+---------------
+VERSION 5.0.10
+---------------
+
+ADDED: PressSectionDeliveryMethods to PublicationPressSection
+
+----------------------
+VERSION 5.0.9
+-------------
+
+ADDED: New fields to PublicationPressSection
+* AlertEmail
+* DeliverToExternalEmail
+* contact details: AddressLine1, AddressLine2, AddressLine3, AddressTown, AddressCounty, AddressPostcode, AddressCountry, Email, Phone, WebAddress
+
+----------------------
+VERSION 5.0.8
+-------------
+
+Rolled back version 5.0.6 - removed methods:
+* GetPublicationUpdates
+* GetPressSectionUpdates
+* GetPressSectionSizeUpdates
+
+-------------
+VERSION 5.0.7
+-------------
+
+ADDED: new properties to publishers, publications and press sections:
+* DeliverableViaAdfast
+* VisibleInAdminPlus
+
+----------------------
+VERSION 5.0.6
+-------------
+
+ADDED: New methods for getting updated specs:
+* GetPublicationUpdates
+* GetPressSectionUpdates
+* GetPressSectionSizeUpdates
+
+-------------
+VERSION 5.0.5
+-------------
+
+ADDED: Method for getting Press centres filtered by a country
+
+-------------
+VERSION 5.0.4
+-------------
+
+ADDED: Getting a Publication using a Press Section 
+
+-------------
+VERSION 5.0.3
+-------------
+
+UPDATED: V5 Updates for Adfast Page search
+REMOVED: Obsolete V5 API Calls
+
+-------------
+VERSION 5.0.2
+-------------
+
+ADDED: Additional Publication Press Section properties
+
+-------------
+VERSION 5.0.1
+-------------
+
+UPDATED: Nuget References
+REMOVED: Unused Nuget References
+
+-------------
+VERSION 5.0.0
+-------------
+
+ADDED: Support for Version 5 of the Adlib public data API
+UPDATED: Nuget packages for JSON Libraries
+
+-------------
+VERSION 4.1.1
+-------------
+
+UPDATED: Nuget packages to latest version of ASP.NET MVC, Json and related libraries
+
+-------------
+VERSION 4.1.0
+-------------
+
+ADDED: GetDigitalSectionPricing (Qmuli internal production related call)
+
+-------------
+VERSION 4.0.0
+-------------
+
+BREAKING CHANGE:
+There is a fundamental change in the way data is split between Publishers and Publications.
+Publishers now represent the separate Press Centres handling the publications.
+Publishers can be grouped by Media Owner if required for the full hierarchy.
+This essentially means there will be more Publishers returned, where the Id's will not map the previous publishers.
+Consumers of the API will need to refresh their database if storing a local copy.
+Method names have also changed, some with added parameters
+
+ADDED: Public Data Api 4, which now includes breaking changes (see above)
+ADDED: Additional Production Data for each section (production data requires additional authorization and is used internally by Qmuli integrated applications)
+REMOVED: Support for discontinued Production Data Api
+REMOVED: Support for PublicDataAPI V3 and below
+
+-------------
+VERSION 3.2.0
+-------------
+ADDED: Public Data Api 3 Call: GetPublisherData
+ADDED: Public Data Api 3 Call: GetPublisherDataFromPublicationId
+
+-------------
+VERSION 3.1.0
+-------------
+ADDED: Publisher Notes property to Pres Section on PublicDataApiV3
+
+-------------
+VERSION 3.0.0
+-------------
+ADDED: PublicDataApiV3
+
+-------------
+VERSION 2.0.0
+-------------
+REMOVED: Untested PublicDataApiV1
+ADDED: PublicDataApiV2
+
+-------------
+VERSION 1.0.0
+-------------
+ADDED: Initial Versioned Release
